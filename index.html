@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>°C to °F</title>
+    <title>Temperature Converter</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -17,16 +17,24 @@
             alt="thermometer"
             style="width: 250px"
           />
-          <p style="text-align: center">Celsius to Farenheit</p>
+          <p style="text-align: center" id="conversion-title">
+            Celsius to Fahrenheit
+          </p>
           <p style="text-align: center">Conversion</p>
         </div>
 
         <div id="forms-butts" style="margin-left: 10px">
           <h2>Temperature</h2>
 
-          <label for="Celsius">Celsius <span id="deg-c"> °C</span> </label>
+          <label for="temperature" id="temp-label"
+            >Celsius <span id="deg-c"> (°C)</span>
+          </label>
           <br />
-          <input type="text" style="margin-bottom: 10px; width: 30%" id="cel" />
+          <input
+            type="text"
+            style="margin-bottom: 10px; width: 30%"
+            id="temp-input"
+          />
 
           <br />
 
@@ -41,7 +49,7 @@
           >
             Convert
           </button>
-          <!-- <button
+          <button
             id="swap"
             style="
               background-color: lightgreen;
@@ -51,16 +59,15 @@
             "
           >
             <span>⇅</span>
-          </button> -->
+          </button>
           <br />
-          <label for="Fahrenheit"
+          <label for="result" id="result-label"
             >Fahrenheit <span id="deg-f"> (°F)</span></label
           >
-
           <br />
-          <input type="text" id="far" style="width: 30%" />
+          <input type="text" id="result" style="width: 30%" readonly />
 
-          <p>
+          <p id="formula">
             Celsius to Fahrenheit conversion formula <br />
             Fahrenheit = (Celsius * 1.8) + 32
           </p>
