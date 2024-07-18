@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>°C to °F</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="big-big-container">
+      <div id="green"></div>
+
+      <div id="intermediate-container" style="display: flex">
+        <div id="thermometer">
+          <img
+            src="48c6e5c1a575a83e83fcf4cc8ff633b3-pink-thermometer-icon.webp"
+            alt="thermometer"
+            style="width: 250px"
+          />
+          <p style="text-align: center">Celsius to Farenheit</p>
+          <p style="text-align: center">Conversion</p>
+        </div>
+
+        <div id="forms-butts" style="margin-left: 10px">
+          <h2>Temperature</h2>
+
+          <label for="Celsius">Celsius <span id="deg-c"> °C</span> </label>
+          <br />
+          <input type="text" style="margin-bottom: 10px; width: 30%" id="cel" />
+
+          <br />
+
+          <button
+            id="convert"
+            style="
+              background-color: lightgreen;
+              border-radius: 9%;
+              width: 100px;
+              margin-bottom: 1rem;
+            "
+          >
+            Convert
+          </button>
+          <!-- <button
+            id="swap"
+            style="
+              background-color: lightgreen;
+              border-radius: 9%;
+              width: 30px;
+              margin-bottom: 1rem;
+            "
+          >
+            <span>⇅</span>
+          </button> -->
+          <br />
+          <label for="Fahrenheit"
+            >Fahrenheit <span id="deg-f"> (°F)</span></label
+          >
+
+          <br />
+          <input type="text" id="far" style="width: 30%" />
+
+          <p>
+            Celsius to Fahrenheit conversion formula <br />
+            Fahrenheit = (Celsius * 1.8) + 32
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

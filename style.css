@@ -1,0 +1,20 @@
+#big-big-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  width: 500px;
+  margin: auto;
+  margin-top: 10%;
+  border-radius: 3%;
+}
+
+#green {
+  background-color: #32a852;
+  height: 20px;
+  width: 100%;
+}
+body {
+  background-color: black;
+}
