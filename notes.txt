@@ -1,0 +1,102 @@
+SPA (single page applications) they dont have single pages but load a single page dynamically from the list of pages
+like react and angular and Vue 
+
+MPA(multiple page applications)
+
+SPA has better Search Engine Optimization(SEO)
+
+Webpack (Module bundler)
+bundles multiple needed files into a single file or a set of files to reduce the amount of files requested; 
+
+ npm packages at https://www.npmjs.com
+
+Angular features 
+
+
+-component based arch
+- ts
+- dependancy injection
+- data binding 
+- routing 
+- templating 
+- reactive programming 
+
+angularJS is now called angular2+ which is a complete rewrite of angularJS
+
+from angular 17 the modules and routing are now stand alone 
+
+to use a component in another component add it to the selector 
+
+
+download "angular files" extention to generate classes and modules using the right click instead of the CLI
+
+ngIf completely removes the element from the DOM unlike hidden 
+
+- ngFor
+- ngSwitch
+
+in the CLI type ng help 
+
+search sync and async in angular
+
+
+
+https://www.npmjs.com/package/@angular/cli
+
+documentation: 
+https://angular.dev/
+
+npm i @angular/cli  or npm i @angular/cli@14   @14 means version 14
+ng v to vheck if it installed 
+cd [directory to initialize angular project]
+ng new [name]
+cd [name] 
+npm start 
+
+ng serve --port 8080
+
+
+to use an already defined variable use {{variableName}}  which is 1 way binding (interpolation)
+
+for 2 way binding use ngModal from the forms module "FormModule"
+
+ex: [(ngModal)] = "variableName"     [(ngModal)] = "addedUser.Fname" 
+2 way binding means if I change the ts hatsama3 fel html we law 8ayart el html hatsama3 fel ts 
+
+to add an onclick function use (click) = "AddUser()" for example 
+
+
+add bootstrap to the styles property in angular.json using the minify file bootstrap.min.css
+
+
+to generate a component 
+ng g c [name]
+short for  ng generate component 
+
+to generate a module
+create a new folder called modules to add all the modules inside the src file or just include the file path without creating it first 
+ng g m ../modules/user
+
+to use a component in another component you need to import it first 
+
+
+
+ngIf = "fname.invalid && fname.dirty"  can be used to validate a field there is also .touched and .pristine 
+
+to make a button disabled for example you can use the property [disabled] = "condition"; 
+
+
+Routers 
+
+const routes : Routes = [
+{path:'', redirectTo: 'user', pathMatch: 'full'},
+{path: 'user', component: UserComponent}, 
+{path: '**', component: PageNotFoundComponent}
+
+]
+
+in the imports import RouterModule.forRoot(routes)
+
+search app.routing.module.ts
+
+
