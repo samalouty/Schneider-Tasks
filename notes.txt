@@ -99,4 +99,5 @@ in the imports import RouterModule.forRoot(routes)
 
 search app.routing.module.ts
 
-
+to add a link to another page add the properties 
+routerLink = "/user" routerLinkActive = "#fff"
